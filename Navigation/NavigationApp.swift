@@ -21,7 +21,7 @@ struct SwiftUINavigationApp: App {
             ],
             route: nil
           ),
-          selectedTab: .inventory
+          selectedTab: .one
         )
       )
     }

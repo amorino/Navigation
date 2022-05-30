@@ -207,8 +207,7 @@ extension NavigationLink {
     @ViewBuilder destination: @escaping (Binding<Value>) -> WrappedDestination,
     @ViewBuilder label: @escaping () -> Label
   )
-  where Destination == WrappedDestination?
-  {
+  where Destination == WrappedDestination? {
     self.init(
       isActive: optionalValue.isPresent().didSet(onNavigate),
       destination: {
@@ -241,8 +240,7 @@ extension NavigationLink {
     @ViewBuilder destination: @escaping (Binding<Case>) -> WrappedDestination,
     @ViewBuilder label: @escaping () -> Label
   )
-  where Destination == WrappedDestination?
-  {
+  where Destination == WrappedDestination? {
     self.init(
       unwrap: optionalValue.case(casePath),
       onNavigate: onNavigate,
@@ -251,7 +249,6 @@ extension NavigationLink {
     )
   }
 }
-
 
 // .sheet:         (Binding<E?>, CasePath<E, C>, (Binding<C>) -> some View) -> some View
 // .popover:       (Binding<E?>, CasePath<E, C>, (Binding<C>) -> some View) -> some View

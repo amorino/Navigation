@@ -12,6 +12,7 @@
 		CC0AA488281F9E360098BB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0AA487281F9E360098BB4B /* Assets.xcassets */; };
 		CC0AA48B281F9E360098BB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0AA48A281F9E360098BB4B /* Preview Assets.xcassets */; };
 		CC0AA495281F9E370098BB4B /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0AA494281F9E370098BB4B /* NavigationTests.swift */; };
+		CCF25CD928457A5800618059 /* Parsing in Frameworks */ = {isa = PBXBuildFile; productRef = CCF25CD828457A5800618059 /* Parsing */; };
 		CCFF758C282C843700BE1EC1 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFF758B282C843700BE1EC1 /* Inventory.swift */; };
 		CCFF758E282C845700BE1EC1 /* SwiftUIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFF758D282C845700BE1EC1 /* SwiftUIHelpers.swift */; };
 		CCFF7590282C847000BE1EC1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFF758F282C847000BE1EC1 /* ItemView.swift */; };
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF25CD928457A5800618059 /* Parsing in Frameworks */,
 				CCFF7595282C84DB00BE1EC1 /* CasePaths in Frameworks */,
 				CCFF7598282C84FB00BE1EC1 /* IdentifiedCollections in Frameworks */,
 			);
@@ -132,6 +134,7 @@
 			packageProductDependencies = (
 				CCFF7594282C84DB00BE1EC1 /* CasePaths */,
 				CCFF7597282C84FB00BE1EC1 /* IdentifiedCollections */,
+				CCF25CD828457A5800618059 /* Parsing */,
 			);
 			productName = Navigation;
 			productReference = CC0AA480281F9E340098BB4B /* Navigation.app */;
@@ -186,6 +189,7 @@
 			packageReferences = (
 				CCFF7593282C84DB00BE1EC1 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
 				CCFF7596282C84FB00BE1EC1 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+				CCF25CD728457A5800618059 /* XCRemoteSwiftPackageReference "swift-parsing" */,
 			);
 			productRefGroup = CC0AA481281F9E340098BB4B /* Products */;
 			projectDirPath = "";
@@ -494,6 +498,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CCF25CD728457A5800618059 /* XCRemoteSwiftPackageReference "swift-parsing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-parsing.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 		CCFF7593282C84DB00BE1EC1 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-case-paths.git";
@@ -513,6 +525,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CCF25CD828457A5800618059 /* Parsing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF25CD728457A5800618059 /* XCRemoteSwiftPackageReference "swift-parsing" */;
+			productName = Parsing;
+		};
 		CCFF7594282C84DB00BE1EC1 /* CasePaths */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CCFF7593282C84DB00BE1EC1 /* XCRemoteSwiftPackageReference "swift-case-paths" */;

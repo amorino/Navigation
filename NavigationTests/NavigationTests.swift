@@ -1,5 +1,6 @@
 import CasePaths
 import XCTest
+
 @testable import Navigation
 
 class SwiftUINavigationTests: XCTestCase {
@@ -7,7 +8,8 @@ class SwiftUINavigationTests: XCTestCase {
     let viewModel = InventoryViewModel()
     viewModel.addButtonTapped()
 
-    let itemToAdd = try XCTUnwrap((/InventoryViewModel.Route.add).extract(from: XCTUnwrap(viewModel.route)))
+    let itemToAdd = try XCTUnwrap(
+      (/InventoryViewModel.Route.add).extract(from: XCTUnwrap(viewModel.route)))
 
     viewModel.add(item: itemToAdd)
 
